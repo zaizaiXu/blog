@@ -87,6 +87,8 @@ export default defineConfig({
           items: [
             { text: '自定义防抖指令debounce', link: '/pages/front/vue/debounce' },
             { text: 'Vue页面回退或关闭发送请求不中断', link: '/pages/front/vue/fetch' },
+            { text: 'Vue3 10种组件通讯方式', link: '/pages/front/vue/communication3' },
+            { text: 'Vue2 父传子 父传后代 子传父', link: '/pages/front/vue/communication2' },
             { text: 'Vue移动端长按事件', link: '/pages/front/vue/longPress' },
             { text: 'van-field失去焦点输入框自动清空', link: '/pages/front/vue/vanField' },
           ]
@@ -101,20 +103,20 @@ export default defineConfig({
             { text: 'Vue前端直传至阿里云OSS', link: '/pages/front/js/oss' },
           ]
         },
-        {
-          text: 'Css',
-          collapsed: false,
-          items: [
-            { text: 'Css', link: '/pages/front/css' },
-          ]
-        },
-        {
-          text: 'HTML',
-          collapsed: false,
-          items: [
-            { text: 'HTML', link: '/pages/front/html' },
-          ]
-        },
+        // {
+        //   text: 'Css',
+        //   collapsed: false,
+        //   items: [
+        //     { text: 'Css', link: '/pages/front/css' },
+        //   ]
+        // },
+        // {
+        //   text: 'HTML',
+        //   collapsed: false,
+        //   items: [
+        //     { text: 'HTML', link: '/pages/front/html' },
+        //   ]
+        // },
       ],
       '/pages/tool/': [
         {
