@@ -12,6 +12,7 @@ Vue3 组件通讯
 6. provide / inject
 7. 总线 bus
 8. Pinia
+9. mitt.js
 
 ### Props
 [props 文档](https://cn.vuejs.org/guide/components/props.html)
@@ -724,6 +725,67 @@ function handleClick() {
 ```
 `Pinia` 还提供了多种语法糖，强烈建议阅读一下
 
+### mitt.js
+前面用到的 `总线 Bus` 方法，其实和 `mitt.js` 有点像，但 `mitt.js` 提供了更多的方法。
 
+比如：
 
+- `on`：添加事件
+- `emit`：执行事件
+- `off`：移除事件
+- `clear`：清除所有事件
 
+`mitt.js` 不是专门给 Vue 服务的，但 Vue 可以利用 `mitt.js` 做`跨组件通信`。
+
+#### 安装
+```sh
+$ npm i mitt 
+```
+#### 使用
+我模拟一下 `总线Bus` 的方式。
+
+我在同级目录创建3个文件用作模拟。
+```sh
+Parent.vue
+Child.vue
+Bus.js
+```
+Bus.js
+```js
+import mitt from 'mitt'
+export default mitt()
+```
+Parent.vue
+```vue
+<template>
+  <div>
+    Mitt
+    <Child />
+  </div>
+</template>
+
+<script setup>
+import Child from './Child.vue'
+import Bus from './Bus.js'
+
+Bus.on('sayHello', () => console.log('雷猴啊'))
+</script>
+```
+Child.vue
+```vue
+<template>
+  <div>
+    Child：<button @click="handleClick">打声招呼</button>
+  </div>
+</template>
+
+<script setup>
+import Bus from './Bus.js'
+
+function handleClick() {
+  Bus.emit('sayHello')
+}
+</script>
+```
+此时，点击 `Child.vue` 上的按钮，在控制台就会执行在 `Parent.vue` 里定义的方法。
+`mitt.js` 的用法其实很简单，建议跟着官方示例敲一下代码，几分钟就上手了。

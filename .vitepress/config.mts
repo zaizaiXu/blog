@@ -86,9 +86,11 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '自定义防抖指令debounce', link: '/pages/front/vue/debounce' },
+            { text: '自定义指令showTip', link: '/pages/front/vue/showTip' },
             { text: 'Vue页面回退或关闭发送请求不中断', link: '/pages/front/vue/fetch' },
             { text: 'Vue3 组件通讯', link: '/pages/front/vue/communication3' },
             { text: 'Vue2 组件通讯', link: '/pages/front/vue/communication2' },
+            { text: 'Vue3使用tinymce富文本编辑器', link: '/pages/front/vue/tinymce' },
             { text: 'Vue移动端长按事件', link: '/pages/front/vue/longPress' },
             { text: 'van-field失去焦点输入框自动清空', link: '/pages/front/vue/vanField' },
           ]
