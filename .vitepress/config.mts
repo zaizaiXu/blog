@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/my-blog/",
+  base: "/blog/",
   title: "许如风",
   description: "A VitePress Site",
   themeConfig: {
@@ -87,8 +87,8 @@ export default defineConfig({
           items: [
             { text: '自定义防抖指令debounce', link: '/pages/front/vue/debounce' },
             { text: 'Vue页面回退或关闭发送请求不中断', link: '/pages/front/vue/fetch' },
-            { text: 'Vue3 10种组件通讯方式', link: '/pages/front/vue/communication3' },
-            { text: 'Vue2 父传子 父传后代 子传父', link: '/pages/front/vue/communication2' },
+            { text: 'Vue3 组件通讯', link: '/pages/front/vue/communication3' },
+            { text: 'Vue2 组件通讯', link: '/pages/front/vue/communication2' },
             { text: 'Vue移动端长按事件', link: '/pages/front/vue/longPress' },
             { text: 'van-field失去焦点输入框自动清空', link: '/pages/front/vue/vanField' },
           ]
