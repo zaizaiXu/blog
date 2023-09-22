@@ -7,16 +7,11 @@ Vue3 10种组件通讯方式
 1. Props
 2. emits
 3. expose / ref
-
-[//]: # (4. Non-Props)
-5. v-model
-6. 插槽 slot
-7. provide / inject
-8. 总线 bus
-9. getCurrentInstance
-10. Vuex
-11. Pinia
-12. mitt.js
+4. v-model
+5. 插槽 slot
+6. provide / inject
+7. 总线 bus
+8. Pinia
 
 ### Props
 [props 文档](https://cn.vuejs.org/guide/components/props.html)
