@@ -97,6 +97,8 @@ export default defineConfig({
             { text: 'Vue3+TS实现倒计时组件', link: '/pages/front/vue/countdown' },
             { text: 'Vue3+elementPlus动态主题', link: '/pages/front/vue/theme' },
             { text: 'el-image-viewer实现图片预览', link: '/pages/front/vue/imageViewer' },
+            { text: 'Vue项目文件导入导出功能', link: '/pages/front/vue/importAndExport' },
+            { text: 'Vue keep-alive返回保存滚动条位置', link: '/pages/front/vue/keepaliveScrollY' },
             { text: 'Vue移动端长按事件', link: '/pages/front/vue/longPress' },
             { text: 'van-field失去焦点输入框自动清空', link: '/pages/front/vue/vanField' },
           ]
@@ -109,6 +111,18 @@ export default defineConfig({
             { text: 'WebSocket', link: '/pages/front/js/websocket' },
             { text: 'JS计算精度丢失', link: '/pages/front/js/lossOfPrecision' },
             { text: 'Vue前端直传至阿里云OSS', link: '/pages/front/js/oss' },
+            { text: 'DIV触底加载更多实现', link: '/pages/front/js/touchBottom' },
+            { text: 'JS数据类型最简单判断方法', link: '/pages/front/js/dataType' },
+            { text: 'JS树形结构数组遍历方式', link: '/pages/front/js/treeStructureArrayTraversal' },
+            { text: 'JS树形结构数据筛选过滤', link: '/pages/front/js/filterTreeData' },
+            { text: 'HTML内容转pdf', link: '/pages/front/js/htmlToPdf' },
+          ]
+        },
+        {
+          text: '小程序',
+          collapsed: false,
+          items: [
+            { text: '解决小程序页面首次加载闪屏', link: '/pages/front/applet/splashScreen' },
           ]
         },
         {
@@ -131,6 +145,7 @@ export default defineConfig({
           text: '工具',
           collapsed: false,
           items: [
+            { text: 'Git常用命令', link: '/pages/tool/git' },
             { text: '在手机上预览H5本地项目', link: '/pages/tool/preview' },
             {
               text: 'VitePress',
