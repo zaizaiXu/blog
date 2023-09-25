@@ -15,10 +15,10 @@ Vue前端直传至阿里云OSS（支持断点续传，分片上传，批量上�
 ## 安装依赖
 ::: code-group
 ```sh [npm]
-$ npm install ali-oss
+npm install ali-oss
 ```
 ```sh [yarn]
-$ yarn add ali-oss
+yarn add ali-oss
 ```
 :::
 

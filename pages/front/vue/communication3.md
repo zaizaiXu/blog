@@ -604,10 +604,10 @@ function changeBusMsg() {
 #### 安装
 ::: code-group
 ```sh [npm]
-$ npm install pinia
+npm install pinia
 ```
 ```sh [yarn]
-$ yarn add pinia
+yarn add pinia
 ```
 :::
 #### 注册
@@ -739,7 +739,7 @@ function handleClick() {
 
 #### 安装
 ```sh
-$ npm i mitt 
+npm i mitt 
 ```
 #### 使用
 我模拟一下 `总线Bus` 的方式。

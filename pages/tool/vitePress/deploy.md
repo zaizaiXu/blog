@@ -13,15 +13,15 @@
 ::: code-group
 
 ```sh [npm]
-$ npm run docs:build
+npm run docs:build
 ```
 
 ```sh [pnpm]
-$ pnpm docs:build
+pnpm docs:build
 ```
 
 ```sh [yarn]
-$ yarn docs:build
+yarn docs:build
 ```
 
 :::

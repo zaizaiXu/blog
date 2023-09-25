@@ -10,7 +10,7 @@ Vue3使用tinymce富文本编辑器
 [官网例子](https://www.tiny.cloud/docs/tinymce/6/vue-cloud/)
 
 ```sh
-$ npm install --save "@tinymce/tinymce-vue"
+npm install --save "@tinymce/tinymce-vue"
 ```
 ## 开始使用
 api-key ：去官方申请key，免费的，注册账号就行。

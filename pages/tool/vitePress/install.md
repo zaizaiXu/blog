@@ -16,15 +16,15 @@ title: VitePress安装
 ::: code-group
 
 ```sh [npm]
-$ npx vitepress init
+npx vitepress init
 ```
 
 ```sh [pnpm]
-$ pnpm dlx vitepress init
+pnpm dlx vitepress init
 ```
 
 ```sh [bun]
-$ bunx vitepress init
+bunx vitepress init
 ```
 :::
 
