@@ -1,0 +1,47 @@
+import{_ as s,o as a,c as n,Q as p}from"./chunks/framework.498a5564.js";const h=JSON.parse('{"title":"HackTimer 避免计时器在标签页不活动时被浏览器节流","description":"","frontmatter":{"title":"HackTimer 避免计时器在标签页不活动时被浏览器节流"},"headers":[],"relativePath":"pages/front/js/hacktimer.md","filePath":"pages/front/js/hacktimer.md"}'),l={name:"pages/front/js/hacktimer.md"},o=p(`<p>HackTimer 避免计时器在标签页不活动时被浏览器节流</p><p><code>安装引入即可</code></p><h3 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-label="Permalink to &quot;安装&quot;">​</a></h3><div class="language-shell vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#B392F0;">npm</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">install</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">hacktimer</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#6F42C1;">npm</span><span style="color:#24292E;"> </span><span style="color:#032F62;">install</span><span style="color:#24292E;"> </span><span style="color:#032F62;">hacktimer</span></span></code></pre></div><h2 id="全局引入" tabindex="-1">全局引入 <a class="header-anchor" href="#全局引入" aria-label="Permalink to &quot;全局引入&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;hacktimer&#39;</span></span>
+<span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> { createApp } </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;vue&#39;</span></span>
+<span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> App </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;./App.vue&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">app</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">createApp</span><span style="color:#E1E4E8;">(App);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">app.</span><span style="color:#B392F0;">mount</span><span style="color:#E1E4E8;">(</span><span style="color:#9ECBFF;">&#39;#app&#39;</span><span style="color:#E1E4E8;">);</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;hacktimer&#39;</span></span>
+<span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> { createApp } </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;vue&#39;</span></span>
+<span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> App </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;./App.vue&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">app</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">createApp</span><span style="color:#24292E;">(App);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">app.</span><span style="color:#6F42C1;">mount</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&#39;#app&#39;</span><span style="color:#24292E;">);</span></span></code></pre></div><h2 id="局部引入使用" tabindex="-1">局部引入使用 <a class="header-anchor" href="#局部引入使用" aria-label="Permalink to &quot;局部引入使用&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">&lt;</span><span style="color:#85E89D;">script</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">setup</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">lang</span><span style="color:#F97583;">=</span><span style="color:#9ECBFF;">&quot;ts&quot;</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">import &#39;hacktimer&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">let timer: any = null</span></span>
+<span class="line"><span style="color:#E1E4E8;">const getTime = () =&gt; {</span></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 避免重复执行 setTimeout</span></span>
+<span class="line"><span style="color:#E1E4E8;">  timer </span><span style="color:#F97583;">&amp;&amp;</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">clearTimeout</span><span style="color:#E1E4E8;">(timer)</span></span>
+<span class="line"><span style="color:#E1E4E8;">  timer </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">setTimeout</span><span style="color:#E1E4E8;">(</span><span style="color:#F97583;">async</span><span style="color:#E1E4E8;"> () </span><span style="color:#F97583;">=&gt;</span><span style="color:#E1E4E8;"> {</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#6A737D;">// todo something</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">getTime</span><span style="color:#E1E4E8;">() </span></span>
+<span class="line"><span style="color:#E1E4E8;">  }, </span><span style="color:#79B8FF;">1000</span><span style="color:#E1E4E8;">)</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">onMounted(() =&gt; {</span></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">getTime</span><span style="color:#E1E4E8;">()</span></span>
+<span class="line"><span style="color:#E1E4E8;">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">&lt;/</span><span style="color:#85E89D;">script</span><span style="color:#E1E4E8;">&gt;</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">script</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">setup</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">lang</span><span style="color:#D73A49;">=</span><span style="color:#032F62;">&quot;ts&quot;</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">import &#39;hacktimer&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">let timer: any = null</span></span>
+<span class="line"><span style="color:#24292E;">const getTime = () =&gt; {</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 避免重复执行 setTimeout</span></span>
+<span class="line"><span style="color:#24292E;">  timer </span><span style="color:#D73A49;">&amp;&amp;</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">clearTimeout</span><span style="color:#24292E;">(timer)</span></span>
+<span class="line"><span style="color:#24292E;">  timer </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">setTimeout</span><span style="color:#24292E;">(</span><span style="color:#D73A49;">async</span><span style="color:#24292E;"> () </span><span style="color:#D73A49;">=&gt;</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#6A737D;">// todo something</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">getTime</span><span style="color:#24292E;">() </span></span>
+<span class="line"><span style="color:#24292E;">  }, </span><span style="color:#005CC5;">1000</span><span style="color:#24292E;">)</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">onMounted(() =&gt; {</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">getTime</span><span style="color:#24292E;">()</span></span>
+<span class="line"><span style="color:#24292E;">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">script</span><span style="color:#24292E;">&gt;</span></span></code></pre></div>`,8),e=[o];function t(c,r,E,i,y,m){return a(),n("div",null,e)}const F=s(l,[["render",t]]);export{h as __pageData,F as default};
