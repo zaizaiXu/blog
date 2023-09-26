@@ -15,7 +15,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '前端', link: '/pages/front/vue/debounce', activeMatch: '/pages/front/' },
-      { text: '工具', link: '/pages/tool/preview', activeMatch: '/pages/tool/' },
+      { text: '工具', link: '/pages/tool/git', activeMatch: '/pages/tool/' },
       { text: '项目', link: '/pages/project' },
       // {
       //   text: 'Dropdown Menu',
@@ -87,16 +87,21 @@ export default defineConfig({
           items: [
             { text: '自定义防抖指令debounce', link: '/pages/front/vue/debounce' },
             { text: '自定义指令showTip', link: '/pages/front/vue/showTip' },
+            { text: 'Vue3与Vue2的区别', link: '/pages/front/vue/differentVue23' },
             { text: 'Vue页面回退或关闭发送请求不中断', link: '/pages/front/vue/fetch' },
             { text: 'Vue实现定时刷新', link: '/pages/front/vue/refresh' },
             { text: 'Vue3 组件通讯', link: '/pages/front/vue/communication3' },
             { text: 'Vue2 组件通讯', link: '/pages/front/vue/communication2' },
+            { text: 'Vue项目使用keep-alive', link: '/pages/front/vue/keepAlive' },
             { text: 'Pinia.js上手指南', link: '/pages/front/vue/pinia' },
             { text: 'Vue3使用tinymce富文本编辑器', link: '/pages/front/vue/tinymce' },
             { text: 'Vue 截取视频第一帧', link: '/pages/front/vue/videoFirstFrame' },
             { text: 'Vue3+TS实现倒计时组件', link: '/pages/front/vue/countdown' },
+            { text: '切片上传', link: '/pages/front/vue/sliceUpload' },
+            { text: 'el-select自定义搜索', link: '/pages/front/vue/elSelectFilter' },
             { text: 'Vue3+elementPlus动态主题', link: '/pages/front/vue/theme' },
             { text: 'el-image-viewer实现图片预览', link: '/pages/front/vue/imageViewer' },
+            { text: 'el-image实现下载功能', link: '/pages/front/vue/elImage' },
             { text: 'Vue项目文件导入导出功能', link: '/pages/front/vue/importAndExport' },
             { text: 'Vue keep-alive返回保存滚动条位置', link: '/pages/front/vue/keepaliveScrollY' },
             { text: 'Vue移动端长按事件', link: '/pages/front/vue/longPress' },
@@ -116,13 +121,15 @@ export default defineConfig({
             { text: 'JS树形结构数组遍历方式', link: '/pages/front/js/treeStructureArrayTraversal' },
             { text: 'JS树形结构数据筛选过滤', link: '/pages/front/js/filterTreeData' },
             { text: 'HTML内容转pdf', link: '/pages/front/js/htmlToPdf' },
+            { text: 'HackTimer 避免计时器在标签页不活动时被浏览器节流', link: '/pages/front/js/hacktimer' },
           ]
         },
         {
-          text: '小程序',
+          text: '手机端',
           collapsed: false,
           items: [
             { text: '解决小程序页面首次加载闪屏', link: '/pages/front/applet/splashScreen' },
+            { text: 'Vue封装可移动悬浮窗按钮组件', link: '/pages/front/applet/hoverButton' },
           ]
         },
         {
@@ -132,13 +139,13 @@ export default defineConfig({
             { text: 'CSS文本超出中间内容省略号', link: '/pages/front/css/textOverrun' },
           ]
         },
-        // {
-        //   text: 'HTML',
-        //   collapsed: false,
-        //   items: [
-        //     { text: 'HTML', link: '/pages/front/html' },
-        //   ]
-        // },
+        {
+          text: 'HTML',
+          collapsed: false,
+          items: [
+            { text: 'Vue瀑布流布局多种实现方式', link: '/pages/front/html/waterfalls' },
+          ]
+        },
       ],
       '/pages/tool/': [
         {

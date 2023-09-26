@@ -1,7 +1,7 @@
 ---
 title: VitePress安装
 ---
-
+[官网](https://vitepress.dev/)
 ## VitePress安装
 两种方式
 
