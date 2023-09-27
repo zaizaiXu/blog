@@ -5,7 +5,7 @@ export default defineConfig({
   base: "/blog/",
   title: "c-notes",
   description: "A VitePress Site",
-  head: [['link', { rel: 'icon', href: '/kelp.svg' }]],
+  head: [['link', { rel: 'icon', href: '/blog/kelp.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/kelp.svg', width: 24, height: 24 },
@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '前端', link: '/pages/front/vue/debounce', activeMatch: '/pages/front/' },
       { text: '工具', link: '/pages/tool/git', activeMatch: '/pages/tool/' },
-      { text: '项目', link: '/pages/project' },
+      { text: '项目', link: '/pages/project/editTeaching', activeMatch: '/pages/project/' },
     ],
     sidebar: {
       '/pages/front/': [
@@ -107,6 +107,22 @@ export default defineConfig({
             {text: '设置Mac启动台图标', link: '/pages/tool/mac/bootstrap'}
           ]
         }
+      ],
+      '/pages/project/': [
+        {
+          text: 'web项目',
+          collapsed: false,
+          items: [
+            { text: '教学实训系统编辑平台', link: '/pages/project/editTeaching' },
+          ]
+        },
+        {
+          text: '手机端',
+          collapsed: false,
+          items: [
+
+          ]
+        },
       ]
     },
 
