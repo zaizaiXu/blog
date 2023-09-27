@@ -33,6 +33,7 @@ export default defineConfig({
             { text: 'Vue3使用tinymce富文本编辑器', link: '/pages/front/vue/tinymce' },
             { text: 'Vue 截取视频第一帧', link: '/pages/front/vue/videoFirstFrame' },
             { text: 'Vue3+TS实现倒计时组件', link: '/pages/front/vue/countdown' },
+            { text: 'Vue前端直传至阿里云OSS', link: '/pages/front/vue/oss' },
             { text: '切片上传', link: '/pages/front/vue/sliceUpload' },
             { text: 'el-select自定义搜索', link: '/pages/front/vue/elSelectFilter' },
             { text: 'Vue3+elementPlus动态主题', link: '/pages/front/vue/theme' },
@@ -51,7 +52,6 @@ export default defineConfig({
             { text: '项目笔记', link: '/pages/front/js/' },
             { text: 'WebSocket', link: '/pages/front/js/websocket' },
             { text: 'JS计算精度丢失', link: '/pages/front/js/lossOfPrecision' },
-            { text: 'Vue前端直传至阿里云OSS', link: '/pages/front/js/oss' },
             { text: 'DIV触底加载更多实现', link: '/pages/front/js/touchBottom' },
             { text: 'JS数据类型最简单判断方法', link: '/pages/front/js/dataType' },
             { text: 'JS树形结构数组遍历方式', link: '/pages/front/js/treeStructureArrayTraversal' },
@@ -76,7 +76,7 @@ export default defineConfig({
           ]
         },
         {
-          text: 'HTML',
+          text: '布局',
           collapsed: false,
           items: [
             { text: 'Vue瀑布流布局多种实现方式', link: '/pages/front/html/waterfalls' },
@@ -114,6 +114,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '教学实训系统编辑平台', link: '/pages/project/editTeaching' },
+            { text: '跨境电子商务综合竞赛系统', link: '/pages/project/kuajing' },
           ]
         },
         {
