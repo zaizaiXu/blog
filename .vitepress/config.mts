@@ -3,84 +3,20 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/blog/",
-  title: "许如风",
+  title: "c-notes",
   description: "A VitePress Site",
+  head: [['link', { rel: 'icon', href: '../kelp.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    //   { text: 'Examples', link: '/markdown-examples' }
-    // ],
+    logo: { src: '../kelp.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
       { text: '前端', link: '/pages/front/vue/debounce', activeMatch: '/pages/front/' },
       { text: '工具', link: '/pages/tool/git', activeMatch: '/pages/tool/' },
       { text: '项目', link: '/pages/project' },
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     {
-      //       // Title for the section.
-      //       text: 'Section A Title',
-      //       items: [
-      //         { text: 'Section A Item A', link: '...' },
-      //         { text: 'Section B Item B', link: '...' }
-      //       ]
-      //     },
-      //     {
-      //       // Title for the section.
-      //       text: 'Section A Title',
-      //       items: [
-      //         { text: 'Section A Item A', link: '...' },
-      //         { text: 'Section B Item B', link: '...' }
-      //       ]
-      //     }
-      //   ]
-      // },
-      // { text: 'Github', link: 'https://github.com/...' }
     ],
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
     sidebar: {
       '/pages/front/': [
-        // {
-        //   items: [
-        //     { text: '项目笔记', link: '/pages/front/' },
-        //     // {
-        //     //   text: 'HTML',
-        //     //   collapsible: true,
-        //     //   collapsed: false,
-        //     //   items: [
-        //     //     { text: 'HTML', link: '/front/html' },
-        //     //   ]
-        //     // },
-        //     // {
-        //     //   text: 'Css',
-        //     //   collapsible: true,
-        //     //   collapsed: false,
-        //     //   items: [
-        //     //     { text: 'Css', link: '/front/css' },
-        //     //   ]
-        //     // },
-        //     // {
-        //     //   text: 'JavaScript',
-        //     //   collapsible: true,
-        //     //   collapsed: false,
-        //     //   items: [
-        //     //     { text: 'JavaScript', link: '/front/js' },
-        //     //   ]
-        //     // },
-        //   ]
-        // },
         {
           text: 'Vue',
           collapsed: false,
@@ -178,9 +114,9 @@ export default defineConfig({
       level: 'deep',
       label: '本页目录'
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://gitee.com/ichun/blog' }
+    // ],
     search: {
       provider: 'local'
     }
