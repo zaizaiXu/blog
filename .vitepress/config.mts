@@ -114,7 +114,12 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '教学实训系统编辑平台', link: '/pages/project/editTeaching' },
+            { text: '电子商务客户服务书证融通', link: '/pages/project/oneX' },
             { text: '跨境电子商务综合竞赛系统', link: '/pages/project/kuajing' },
+            { text: 'crm', link: '/pages/project/crm' },
+            { text: '综合一站式教学云平台', link: '/pages/project/yun' },
+            { text: '电子商务竞赛平台', link: '/pages/project/match' },
+            { text: '新媒体实战系统软件', link: '/pages/project/media' },
           ]
         },
         {
