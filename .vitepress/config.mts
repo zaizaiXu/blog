@@ -5,10 +5,10 @@ export default defineConfig({
   base: "/blog/",
   title: "c-notes",
   description: "A VitePress Site",
-  head: [['link', { rel: 'icon', href: '../kelp.svg' }]],
+  head: [['link', { rel: 'icon', href: '/kelp.svg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '../kelp.svg', width: 24, height: 24 },
+    logo: { src: '/kelp.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
       { text: '前端', link: '/pages/front/vue/debounce', activeMatch: '/pages/front/' },
