@@ -29,4 +29,4 @@ title: 教学实训系统编辑平台
 
 [//]: # (![An image]&#40;../../images/edit-teaching-2.gif&#41;)
 
-[//]: # (![An image]&#40;../../images/edit-teaching-3.gif&#41;)
+![An image](../../images/edit-teaching-3.gif)

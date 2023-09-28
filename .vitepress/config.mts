@@ -114,19 +114,24 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '教学实训系统编辑平台', link: '/pages/project/editTeaching' },
-            { text: '电子商务客户服务书证融通', link: '/pages/project/oneX' },
-            { text: '跨境电子商务综合竞赛系统', link: '/pages/project/kuajing' },
+            { text: '客户服务书证融通', link: '/pages/project/oneX' },
+            { text: '跨境综合竞赛系统', link: '/pages/project/kuajing' },
             { text: 'crm', link: '/pages/project/crm' },
             { text: '综合一站式教学云平台', link: '/pages/project/yun' },
-            { text: '电子商务竞赛平台', link: '/pages/project/match' },
+            { text: '南京竞赛平台', link: '/pages/project/match' },
             { text: '新媒体实战系统软件', link: '/pages/project/media' },
+            { text: '电子商务师', link: '/pages/project/ecm' },
+            { text: 'C2C实战教学系统软件(pc、h5)', link: '/pages/project/c2c' },
+            { text: '一课官网', link: '/pages/project/yike' },
           ]
         },
         {
           text: '手机端',
           collapsed: false,
           items: [
-
+            { text: 'crm小程序', link: '/pages/project/crmApplet' },
+            { text: 'H5 基金', link: '/pages/project/fund' },
+            { text: 'H5 课后延时服务', link: '/pages/project/course' },
           ]
         },
       ]
