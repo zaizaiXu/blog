@@ -22,7 +22,7 @@ export default  {
   },
   methods:{
     changeMsg(){
-      this.msg = 'hello juejin'
+      this.msg = 'hello rufeng'
     }
   }
 }
@@ -41,7 +41,7 @@ export default defineComponent({
   setup() {
     const msg = ref('hello world')
     const changeMsg = ()=>{
-      msg.value = 'hello juejin'
+      msg.value = 'hello rufeng'
     }
     return {
       msg,
@@ -63,7 +63,7 @@ import { ref } from "vue";
 
 const msg = ref('hello world')
 const changeMsg = () => {
-  msg.value = 'hello juejin'
+  msg.value = 'hello rufeng'
 }
 </script>
 ```
@@ -84,11 +84,11 @@ export default defineComponent({
   setup() {
     let msg = ref('hello world')
     let obj = reactive({
-      name:'juejin',
+      name:'rufeng',
       age:3
     })
     const changeData = () => {
-      msg.value = 'hello juejin'
+      msg.value = 'hello rufeng'
       obj.name = 'hello world'
     }
     return {
@@ -106,11 +106,11 @@ export default defineComponent({
 import { ref,reactive } from "vue";
 let msg = ref('hello world')
 let obj = reactive({
-    name:'juejin',
+    name:'rufeng',
     age:3
 })
 const changeData = () => {
-  msg.value = 'hello juejin'
+  msg.value = 'hello rufeng'
   obj.name = 'hello world'
 }
 </script>
