@@ -58,6 +58,7 @@ export default defineConfig({
             { text: 'JS树形结构数据筛选过滤', link: '/pages/front/js/filterTreeData' },
             { text: 'HTML内容转pdf', link: '/pages/front/js/htmlToPdf' },
             { text: 'HackTimer 避免计时器在标签页不活动时被浏览器节流', link: '/pages/front/js/hacktimer' },
+            { text: '闭包', link: '/pages/front/js/closure' },
             { text: '回调函数', link: '/pages/front/js/callback' },
             { text: '事件循环机制', link: '/pages/front/js/eventLoop' },
             { text: 'Promise', link: '/pages/front/js/promiseBase' },
