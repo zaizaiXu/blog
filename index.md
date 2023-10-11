@@ -11,9 +11,6 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 我的简历
-      link: /markdown-examples
-    - theme: alt
       text: 项目展示
       link: /pages/project/editTeaching
 
