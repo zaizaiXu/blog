@@ -154,6 +154,10 @@ export default defineConfig({
     // ],
     search: {
       provider: 'local'
-    }
+    },
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
   }
 })
