@@ -4,7 +4,7 @@ node_modules
 # build files
 es/
 lib/
-# dist/
+dist/
 typings/
 
 _site
