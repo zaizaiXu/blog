@@ -18,7 +18,7 @@ yarn-error.log
 *.zip
 .history
 .stylelintcache
-yarn.lock
+# yarn.lock
 package-lock.json
 pnpm-lock.yaml
 .vscode
